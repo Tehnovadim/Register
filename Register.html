@@ -1,0 +1,96 @@
+<html lang="uk" dir="ltr">
+<head>
+<style>
+  .form {
+    width: 300px;
+    height: 500px;
+    background-color: lightblue;
+    border: 5px solid black;
+    margin: auto;
+    padding: 10px;
+  }
+  .field {
+    margin: 10px;
+  }
+  .label {
+    display: inline-block;
+    width: 100px;
+  }
+  .input {
+    display: inline-block;
+    width: 150px;
+  }
+</style>
+</head>
+<body>
+<div class="form">
+  <html lang="uk" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Реєстрація</title>
+  </head>
+  <body>
+    <div class="form">
+      <h1 style="color: white; text-align: center;">Реєстрація</h1>
+      <form action="submit.php" method="post">
+        <div class="field">
+          <span class="label">Ім'я:</span>
+          <input class="input" type="text" name="first_name" required>
+        </div>
+        <div class="field">
+          <span class="label">Прізвище:</span>
+          <input class="input" type="text" name="last_name" required>
+        </div>
+        <div class="field">
+          <span class="label">Псевдонім:</span>
+          <input class="input" type="text" name="screen_name" required>
+        </div>
+        <div class="field">
+          <span class="label">Дата народження:</span>
+          <input class="input" type="date" name="date_of_birth" required>
+        </div>
+        <div class="field">
+          <span class="label">Рід:</span>
+          <select class="input" name="gender" required>
+            <option value="">Виберіть</option>
+            <option value="male">Чоловіча</option>
+            <option value="female">Жіноча</option>
+            <option value="other">Друга</option>
+          </select>
+        </div>
+        <div class="field">
+          <span class="label">Країна:</span>
+          <select class="input" name="country" required>
+            <option value="">Виберіть</option>
+            <option value="Ukraine">Україна</option>
+            <option value="USA">США</option>
+            <option value="China">Китай</option>
+            <option value="Germany">Німеччина</option>
+          </select>
+        </div>
+        <div class="field">
+          <span class="label">Електронна пошта:</span>
+          <input class="input" type="email" name="email" required>
+        </div>
+        <div class="field">
+          <span class="label">Телефон:</span>
+          <input class="input" type="tel" name="phone" required>
+        </div>    
+        <div class="field">
+          <span class="label">Пароль:</span>
+          <input class="input" type="password" name="password" required>
+        </div>    
+        <div class="field">
+          <input type="checkbox" name="terms_of_use" value="agree" required> Я погоджуюся з умовами використання
+        </div>    
+        <div class="field">
+          <input type="submit" value="Надіслати">
+          <input type="reset" value="Скасувати">
+        </div>    
+      </form>  
+    </div>  
+  </body>  
+  </html>
+</div>  
+</body>  
+</html>
