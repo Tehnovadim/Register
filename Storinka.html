@@ -17,6 +17,7 @@
         }
         .contact-form input[type="text"],
         .contact-form input[type="email"],
+        .contact-form input[type="number"],
         .contact-form textarea {
             margin-bottom: 1rem;
             padding: 0.5rem;
@@ -46,6 +47,7 @@
     <form class="contact-form">
         <input type="text" name="name" placeholder="Name">
         <input type="email" name="email" placeholder="Email">
+        <input type="number" name="age" placeholder="Age" min="0" max="120">
         <textarea name="message" placeholder="Message"></textarea>
         <button type="submit">Submit</button>
     </form>
