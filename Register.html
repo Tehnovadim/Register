@@ -34,34 +34,34 @@
       <h1 style="color: white; text-align: center;">Реєстрація</h1>
       <form action="submit.php" method="post">
         <div class="field">
-          <span class="label">Ім'я:</span>
-          <input class="input" type="text" name="first_name" required>
-        </div>
-        <div class="field">
-          <span class="label">Прізвище:</span>
-          <input class="input" type="text" name="last_name" required>
-        </div>
-        <div class="field">
-          <span class="label">Псевдонім:</span>
-          <input class="input" type="text" name="screen_name" required>
-        </div>
+        <span class="label">Ім'я:</span>
+        <input class="input" type="text" name="first_name" placeholder="Введіть ваше ім'я" required>
+      </div>
+      <div class="field">
+        <span class="label">Прізвище:</span>
+        <input class="input" type="text" name="last_name" placeholder="Введіть ваше прізвище" required>
+      </div>
+      <div class="field">
+        <span class="label">Псевдонім:</span>
+        <input class="input" type="text" name="screen_name" placeholder="Введіть ваш псевдонім" required>
+      </div>
         <div class="field">
           <span class="label">Дата народження:</span>
           <input class="input" type="date" name="date_of_birth" required>
         </div>
         <div class="field">
-          <span class="label">Рід:</span>
-          <select class="input" name="gender" required>
-            <option value="">Виберіть</option>
-            <option value="male">Чоловіча</option>
-            <option value="female">Жіноча</option>
-            <option value="other">Друга</option>
-          </select>
+         <span class="label">Рід:</span>
+        <select class="input" name="gender" required>
+        <option value="" disabled selected>Виберіть</option>
+        <option value="male">Чоловіча</option>
+        <option value="female">Жіноча</option>
+        <option value="other">Друга</option>
+      </select>
         </div>
         <div class="field">
           <span class="label">Країна:</span>
           <select class="input" name="country" required>
-            <option value="">Виберіть</option>
+            <option value="" disabled selected>Виберіть</option>
             <option value="Ukraine">Україна</option>
             <option value="USA">США</option>
             <option value="China">Китай</option>
